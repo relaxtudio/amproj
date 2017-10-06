@@ -4,8 +4,6 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { HomePage } from '../pages/home/home';
-import { AboutPage } from '../pages/about/about';
-import { ShowroomPage } from '../pages/showroom/showroom';
 import { CarsPage } from '../pages/cars/cars';
 import { ContactPage } from '../pages/contact/contact';
 import { SimkredPage } from '../pages/simkred/simkred';
@@ -26,8 +24,6 @@ export class MyApp {
     // used for an example of ngFor and navigation
     this.pages = [
       { title: 'Home', component: HomePage, icon: 'home'},
-      { title: 'About Us', component: AboutPage, icon: 'contact'},
-      { title: 'Showroom', component: ShowroomPage, icon: 'navigate'},
       { title: 'Cars', component: CarsPage, icon: 'car'},
       { title: 'Contact Us', component: ContactPage, icon: 'call'},
       { title: 'Simulasi Kredit', component: SimkredPage, icon: 'calculator'}

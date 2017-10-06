@@ -15,4 +15,95 @@
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
 
+* {
+		border-radius: 0 !important;
+		text-decoration: none;
+	}
 
+	.toolbar-background {
+		background-color: transparent;
+	}
+
+	#header-mob {
+		display: none;
+	}
+
+	#header-wb {
+		width: 100%;
+		background-color: #204385;
+		display: inline-block;
+	}
+
+	#menu-list > button {
+		color: #fff;
+		margin-left: 20px;
+		margin-right: 20px;
+		font-size: 1.1em;
+		vertical-align: middle !important;
+		background-color: transparent;
+	}
+
+	#comp-logo {
+		margin-left: 30px;
+		margin-right: 50px;
+		color: white;
+		font-weight: 900;
+	}
+
+	#menu-list >  button:hover {
+		color: #73ACFF;
+		font-weight: 900;
+		font-size: 1.1em;
+	}
+
+	#search-btn {
+		background-color: #fff; 
+		width: 50px;
+	}
+
+	#search-btn:hover {
+		background-color: #73ACFF;
+	}
+
+	.fixed-content {
+		top: 56px;
+	}
+
+	.scroll-content {
+	    top: 56px;
+	}
+
+	@media screen and (max-width: 667px){
+	    #menu-list > a {
+	      margin-left: 5px;
+	      margin-right: 5px;
+	      font-size: 0.91em;
+	    }
+	}
+
+	@media screen and (max-width: 544px){
+
+		.menu-inner > ion-header {
+			top: 56px;
+		}
+
+		.mn-sd-title {
+			color: #fff;
+		}
+
+		#header-mob {
+	      display: unset;
+	    }
+
+	    #header-mob > ion-navbar > button {
+	    	color: #fff;
+	    }
+
+	    .toolbar-background {
+	      background-color: #2D41A5;
+	    }
+
+	    #header-wb {
+	      display: none;
+	    }
+	}

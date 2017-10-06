@@ -1,61 +1,4 @@
 page-home {
-		
-	* {
-		border-radius: 0 !important;
-		text-decoration: none;
-	}
-
-	.toolbar-background {
-		background-color: transparent;
-	}
-
-	#header-mob {
-		display: none;
-	}
-
-	#header-wb {
-		width: 100%;
-		background-color: #204385;
-		display: inline-block;
-	}
-
-	#menu-list > a {
-		color: #fff;
-		margin-left: 20px;
-		margin-right: 20px;
-		font-size: 1.1em;
-		vertical-align: middle !important;
-	}
-
-	#comp-logo {
-		margin-left: 30px;
-		margin-right: 50px;
-		color: white;
-		font-weight: 900;
-	}
-
-	#menu-list >  a:hover {
-		color: #73ACFF;
-		font-weight: 900;
-		font-size: 1.1em;
-	}
-
-	#search-btn {
-		background-color: #fff; 
-		width: 50px;
-	}
-
-	#search-btn:hover {
-		background-color: #73ACFF;
-	}
-
-	.fixed-content {
-		top: 56px;
-	}
-
-	.scroll-content {
-	    top: 56px;
-	}
 
 	#banner {
 		background-color: grey;
@@ -83,13 +26,7 @@ page-home {
 		background-color: transparent;
 	}
 
-	@media screen and (max-width: 667px){
-	    #menu-list > a {
-	      margin-left: 5px;
-	      margin-right: 5px;
-	      font-size: 0.91em;
-	    }
-	}
+	
 
 	#footer {
 		background-color: #E7E7E7;
@@ -126,32 +63,8 @@ page-home {
 	}
 
 	@media screen and (max-width: 544px){
-		#header-mob {
-	      display: unset;
-	    }
-
-	    #header-mob > ion-navbar > button {
-	    	color: #fff;
-	    }
-
-	    .toolbar-background {
-	      background-color: #2D41A5;
-	    }
-
-	    .fixed-content {
-			top: 0px;
-		}
-
-		.scroll-content {
-		    top: 0px;
-		}
-
-	    #header-wb {
-	      display: none;
-	    }
-
 		#all-cars-hm {
-			width: 125px;
+			width: auto;
 			height: 40px;
 			font-size: 1.2em;
 		}
