@@ -1,7 +1,35 @@
 page-home {
 
 	#banner {
-		background-color: grey;
+		margin: 40px auto;
+		position: relative;
+		max-width: 1200px;
+	}
+
+	#banner .pic-hld {
+		background-color: #679EA7;
+		margin: 20px;
+	}
+
+	#banner .ctrl-btn {
+		background-color: #F3B678;
+		height: 60px;
+		width: 60px;
+		line-height: 60px;
+		text-align: center;
+		font-size: 30px;
+		position: absolute;
+		top: 50%;
+		margin-top: -30px;
+		box-shadow: 2px 2px 2px #525252;
+	}
+
+	#banner .ctrl-btn.left {
+		left: 0;
+	}
+
+	#banner .ctrl-btn.right {
+		right: 0;
 	}
 
 	#latest-car {

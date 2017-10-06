@@ -7,6 +7,8 @@ import { HomePage } from '../pages/home/home';
 import { CarsPage } from '../pages/cars/cars';
 import { ContactPage } from '../pages/contact/contact';
 import { SimkredPage } from '../pages/simkred/simkred';
+declare var jquery:any;
+declare var $ :any;
 
 @Component({
   templateUrl: 'app.html'
@@ -23,9 +25,9 @@ export class MyApp {
 
     // used for an example of ngFor and navigation
     this.pages = [
-      { title: 'Home', component: HomePage, icon: 'home'},
-      { title: 'Cars', component: CarsPage, icon: 'car'},
-      { title: 'Contact Us', component: ContactPage, icon: 'call'},
+      { title: 'Halaman Utama', component: HomePage, icon: 'home'},
+      { title: 'Mobil', component: CarsPage, icon: 'car'},
+      { title: 'Hubungi Kami', component: ContactPage, icon: 'call'},
       { title: 'Simulasi Kredit', component: SimkredPage, icon: 'calculator'}
     ];
 
@@ -44,5 +46,10 @@ export class MyApp {
     // Reset the content nav to have just this page
     // we wouldn't want the back button to show in this scenario
     this.nav.setRoot(page.component);
+  }
+
+  title = 'angular 4 with jquery';
+  toggleTitle() {
+    $('.title').slideToggle();
   }
 }
