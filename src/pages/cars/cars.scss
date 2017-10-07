@@ -1,5 +1,32 @@
 page-cars {
 	#cari-m {
-		background-color: #677AF2; 
+		background-color: #9DBFFF; 
+	}
+
+	#search-m {
+		width: 100px;
+		height: 40px;
+		font-size: 0.92em;
+	}
+
+	#search-m:hover {
+		background-color: #e93a3a;
+		color: #fff;
+	}
+
+	#list-m > ion-card {
+		border: 1px solid #C8C8C8;
+	}
+
+	#list-m > ion-card {
+		display: inline-block;
+	}
+
+	.label-md[stacked] {
+		font-size: 1em;
+	}
+
+	#filter, #f-showroom, #brand-m, #thn-m {
+		border-bottom: 1px solid grey;
 	}
 }
