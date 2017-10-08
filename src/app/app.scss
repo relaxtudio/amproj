@@ -15,9 +15,13 @@
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
 
-* {
+	* {
 		border-radius: 0 !important;
 		text-decoration: none;
+	}
+
+	.toolbar-title-md {
+		color: #fff;
 	}
 
 	.toolbar-background {
@@ -39,7 +43,7 @@
 		margin-left: 20px;
 		margin-right: 20px;
 		font-size: 1.1em;
-		vertical-align: middle !important;
+		
 		background-color: transparent;
 	}
 
@@ -51,18 +55,21 @@
 	}
 
 	#menu-list >  button:hover {
-		color: #73ACFF;
-		font-weight: 900;
+		color: #000;
 		font-size: 1.1em;
+		background-color: #73ACFF;
+		height: 47px;
 	}
 
 	#search-btn {
 		background-color: #fff; 
 		width: 50px;
+		height: 47px;
 	}
 
 	#search-btn:hover {
 		background-color: #73ACFF;
+		color: #fff;
 	}
 
 	.fixed-content {
@@ -90,9 +97,16 @@
 	@media screen and (max-width: 544px){
 
 		.menu-inner > ion-header {
-			top: 56px;
+			top: 0;
 		}
 
+		.fixed-content {
+			top: 0;
+		}
+
+		.scroll-content {
+			margin-top:0;
+		}
 		.mn-sd-title {
 			color: #fff;
 		}

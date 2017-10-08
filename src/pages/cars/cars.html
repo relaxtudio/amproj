@@ -4,33 +4,33 @@
       <ion-col col-12 col-md-3>
         <ion-card id="cari-m">
           <ion-card-header text-center>
-            <ion-title color="light">Cari Mobil</ion-title>
+            <ion-title>Cari Mobil</ion-title>
           </ion-card-header>
           <ion-card-content>
             <form>
               <ion-item>
-                        <ion-label stacked><b>Nama Brand</b></ion-label>
-                        <ion-select id="brand-m" multiple="true">
-                          <ion-option value="1">BMW</ion-option>
-                          <ion-option value="2">Mercedes-Benz</ion-option>
-                          <ion-option value="3">Honda</ion-option>
-                          <ion-option value="4">Toyota</ion-option>
-                          <ion-option value="5">Nissan</ion-option>
-                        </ion-select>
-                      </ion-item>
-                      <ion-item>
-                        <ion-label stacked><b>Tahun</b></ion-label>
-                        <ion-select id="thn-m" multiple="true">
-                          <ion-option value="1">2017</ion-option>
-                          <ion-option value="2">2016</ion-option>
-                          <ion-option value="3">2015</ion-option>
-                          <ion-option value="4">2014</ion-option>
-                          <ion-option value="5">2013</ion-option>
-                        </ion-select>
-                      </ion-item>
-                      <ion-item text-center>
-                        <button id="search-m" type="submit" ion-button outline color="danger">Cari &nbsp;<ion-icon name="search"></ion-icon></button>
-                    </ion-item>
+                <ion-label stacked><b>Nama Brand</b></ion-label>
+                <ion-select id="brand-m" multiple="true">
+                  <ion-option value="1">BMW</ion-option>
+                  <ion-option value="2">Mercedes-Benz</ion-option>
+                  <ion-option value="3">Honda</ion-option>
+                  <ion-option value="4">Toyota</ion-option>
+                  <ion-option value="5">Nissan</ion-option>
+                </ion-select>
+              </ion-item>
+              <ion-item>
+                <ion-label stacked><b>Tahun</b></ion-label>
+                <ion-select id="thn-m" multiple="true">
+                  <ion-option value="1">2017</ion-option>
+                  <ion-option value="2">2016</ion-option>
+                  <ion-option value="3">2015</ion-option>
+                  <ion-option value="4">2014</ion-option>
+                  <ion-option value="5">2013</ion-option>
+                </ion-select>
+              </ion-item>
+              <ion-item text-center>
+                <button id="search-m" type="submit" ion-button outline color="danger">Cari &nbsp;<ion-icon name="search"></ion-icon></button>
+              </ion-item>
             </form>
           </ion-card-content>
         </ion-card>
@@ -47,7 +47,7 @@
                 </ion-col>
                 <ion-col col-md-2>
                   <ion-item>
-                  <ion-label stacked>Filter Berdasarkan</ion-label>
+                  <ion-label stacked>Urutkan  <ion-icon name="funnel"></ion-icon></ion-label>
                   <ion-select id="filter" interface="popover">
                     <ion-option value="1">Terbaru</ion-option>
                     <ion-option value="2">Tahun</ion-option>
@@ -60,7 +60,7 @@
                   <ion-item>
                   <ion-label stacked>Showroom</ion-label>
                   <ion-select id="f-showroom" multiple="true">
-                    <ion-option>Darmawangsa</ion-option>
+                    <ion-option>Dharmawangsa</ion-option>
                     <ion-option>Kertajaya</ion-option>
                     <ion-option>Barata Jaya</ion-option>
                     <ion-option>DTC Wonokromo</ion-option>
@@ -70,7 +70,23 @@
               </ion-row>
             </ion-grid>
           </ion-card>
-            
+          
+          <div>
+            <div class="threesixty car">
+                <div class="spinner">
+                    <span>0%</span>
+                </div>
+                <ol class="threesixty_images"></ol>
+            </div>
+            <div id="navigation-prod" class="pull-right">
+              <a class="btn btn-info custom_previous"><i class="fa fa-backward"></i></a>
+              <a class="btn btn-success custom_play"><i class="fa fa-play"></i></a>
+                <a class="btn btn-warning custom_stop"><i class="fa fa-pause"></i></a>
+                <a class="btn btn-info custom_next"><i class="fa fa-forward"></i></a>
+            </div>
+          </div>
+
+          <button id="testing" (click)="test()">TESTING</button>
         </div>
       </ion-col>
     </ion-row>

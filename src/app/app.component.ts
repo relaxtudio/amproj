@@ -7,8 +7,6 @@ import { HomePage } from '../pages/home/home';
 import { CarsPage } from '../pages/cars/cars';
 import { ContactPage } from '../pages/contact/contact';
 import { SimkredPage } from '../pages/simkred/simkred';
-declare var jquery:any;
-declare var $ :any;
 
 @Component({
   templateUrl: 'app.html'
@@ -26,7 +24,7 @@ export class MyApp {
     // used for an example of ngFor and navigation
     this.pages = [
       { title: 'Halaman Utama', component: HomePage, icon: 'home'},
-      { title: 'Mobil', component: CarsPage, icon: 'car'},
+      { title: 'Stok Mobil', component: CarsPage, icon: 'car'},
       { title: 'Hubungi Kami', component: ContactPage, icon: 'call'},
       { title: 'Simulasi Kredit', component: SimkredPage, icon: 'calculator'}
     ];
